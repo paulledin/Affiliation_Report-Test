@@ -136,7 +136,7 @@ def format_currency(amount):
 ###############################################################################
 #Start building Streamlit App
 ###############################################################################
-thePassPhrase = 'PeopleNotProfit$'
+thePassPhrase = st.secrets["thePassPhrase"]
 report_periods = get_report_periods_for_display()
 
 st.set_page_config(
